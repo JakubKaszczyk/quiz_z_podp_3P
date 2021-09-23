@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_gravity="center"
+    android:background="#C39714"
+    android:backgroundTint="#A2C3C0"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/pytanie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pytanie" />
+        android:backgroundTint="#0B0A0A"
+        android:text="@string/pytanie"
+        android:textSize="24sp" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -24,18 +28,21 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#E91E63"
             android:text="@string/odp_a" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#00BCD4"
             android:text="@string/odp_b" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#4CAF50"
             android:text="@string/odp_c" />
 
     </RadioGroup>
@@ -56,9 +63,8 @@
             android:id="@+id/odpowiedz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/check"
             android:onClick="sprawdz"
-            />
+            android:text="@string/check" />
 
     </LinearLayout>
 
